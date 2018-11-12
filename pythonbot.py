@@ -5,7 +5,7 @@ import asyncio
 
 #Initialise client bot
 Client = discord.Client() #Initialise Client 
-bot = commands.Bot(process.env.prefix) 
+bot = commands.Bot(command_prefix = os.environ["prefix"]) 
 
 @client.event 
 async def on_ready():
@@ -18,4 +18,4 @@ async def on_message(message):
     if message.content == "cookie":
         await message.channel.send(":cookie:") 
 
-bot.run(process.env.token)
+bot.run(os.environ["token"])
