@@ -1,4 +1,5 @@
 import discord
+import os
 #import settings
 #from discord.ext.commands import Bot
 #from discord.ext import commands
