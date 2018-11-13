@@ -1,5 +1,5 @@
 import discord
-import settings
+#import settings
 #from discord.ext.commands import Bot
 #from discord.ext import commands
 
@@ -11,7 +11,7 @@ bot = discord.Client() #Initialise Client
 async def on_ready():
     print("Bot is online and connected to Discord")
 
-#TODO: When a message is sent on discord
+# TODO: When a message is sent on discord
 @bot.event
 async def on_message(message):
     if message.author.bot:
